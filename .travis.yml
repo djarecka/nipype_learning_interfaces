@@ -1,10 +1,13 @@
 language: python
 python:
-  - "2.7"
   - "3.5"
 
-# command to install dependencies
-install: pip install numpy pytest
+services:
+  - docker
+
+before_install:
+- docker pull nipype/workshops:latest-complete
+- docker run -d nipype/workshops:latest-complete
 
 # command to run tests
-script: py.test tests_unit/test_temp.py
+#script: py.test tests_unit/test_temp.py
