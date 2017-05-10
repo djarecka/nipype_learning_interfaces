@@ -7,4 +7,4 @@ python:
 install: pip install numpy pytest
 
 # command to run tests
-script: py.test test_unit/test_temp.py
+script: py.test tests_unit/test_temp.py
