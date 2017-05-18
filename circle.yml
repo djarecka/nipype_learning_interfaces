@@ -1,11 +1,14 @@
+machine:
+  services:
+    - docker
+
 dependencies:
   cache_directories:
     - "~/nipype_data"
   override:
-    - pip install --upgrade pip
-    - pip install numpy pytest
+    - docker pull busybox
 
 test:
   override:
-    - pytest tests_unit/test_temp.py
+    - docker run -it busybox
 
