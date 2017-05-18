@@ -10,5 +10,5 @@ dependencies:
 
 test:
   override:
-    - docker run -it --rm -v $PWD:/home/jovyan/work nipype/workshops:latest-complete pytest tests_unit/
+    - docker run -it --rm -v $PWD:/home/jovyan/work nipype/workshops:latest-complete pytest
 
