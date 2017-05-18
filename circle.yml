@@ -3,9 +3,9 @@ dependencies:
     - "~/nipype_data"
   override:
     - pip install --upgrade pip
-    - pip install numpy
+    - pip install pytest
 
 test:
   override:
-    - ls -l
+    - pytest tests_unit/test_temp.py
 
