@@ -6,9 +6,9 @@ dependencies:
   cache_directories:
     - "~/nipype_data"
   override:
-    - docker pull nipype/workshops:latest-base
+    - docker pull nipype/workshops:latest-complete
 
 test:
   override:
-    - docker run -it --rm -v $PWD:/home/jovyan/work nipype/workshops:latest-base pytest tests_unit/test_temp.py
+    - docker run -it --rm -v $PWD:/home/jovyan/work nipype/workshops:latest-complete pytest tests_unit/
 
