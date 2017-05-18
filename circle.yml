@@ -10,5 +10,5 @@ dependencies:
 
 test:
   override:
-    - docker run -it busybox
+    - docker run -it busybox echo $PATH
 
