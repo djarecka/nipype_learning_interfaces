@@ -3,7 +3,7 @@ dependencies:
     - "~/nipype_data"
   override:
     - pip install --upgrade pip
-    - pip install -e .
+    - pip install numpy
 
 test:
   override:
